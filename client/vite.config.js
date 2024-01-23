@@ -7,7 +7,7 @@ export default defineConfig({
   server:{
     proxy:{
       '/api':{
-        target: 'https://anytime-property.onrender.com',
+        target: 'https://anytime-property.onrender.com/api/listing/get',
         secure: false,
       }
     },
