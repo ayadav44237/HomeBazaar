@@ -9,6 +9,8 @@ import cookieParser from 'cookie-parser';
 import cors from "cors";
 dotenv.config();
 
+const app = express();
+
 mongoose
   .connect(process.env.MONGO)
   .then(() => {
@@ -24,7 +26,7 @@ mongoose
 
   // const __dirname = path.resolve();
 
-const app = express();
+
 
 app.use(express.json());
 
